@@ -8,11 +8,11 @@ import com.api.messenger.model.Profile;
 
 public class DatabaseClass {
 	private static Map<Long, Message> messeges = new HashMap<>();
-	private static Map<Long, Profile> profiles = new HashMap<>();
+	private static Map<String, Profile> profiles = new HashMap<>();
 	public static Map<Long, Message> getMesseges(){
 		return messeges;
 	}
-	public static Map<Long, Profile> getProfiles(){
+	public static Map<String, Profile> getProfiles(){
 		return profiles;
 	}
 }
